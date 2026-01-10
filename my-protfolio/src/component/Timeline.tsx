@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { type ReactElement } from 'react';
 import { FaGraduationCap, FaAward } from 'react-icons/fa';
 
 interface TimelineItem {
@@ -6,7 +6,7 @@ interface TimelineItem {
   title: string;
   institution: string;
   description: string;
-  icon: JSX.Element;
+  icon: ReactElement;
 }
 
 const timelineData: TimelineItem[] = [

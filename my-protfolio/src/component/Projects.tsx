@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaExternalLinkAlt, FaCode } from 'react-icons/fa';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 interface Project {
   title: string;
@@ -51,7 +51,7 @@ const projects: Project[] = [
   {
     title: "Travel Blog & Review Platform",
     category: "WordPress Customization",
-    image: "/projects/blog.jpg",
+    image: "/projects/wp.png",
     tech: ["WordPress", "PHP", "Theme Customization", "SEO"],
     desc: "Dynamic travel blog with interactive stories and plugin reviews.",
     features: ["Interactive Travel Stories", "User Comment System", "High-quality Image Galleries"],
@@ -60,7 +60,7 @@ const projects: Project[] = [
   {
     title: "Bd-Stall Clone",
     category: "Frontend Design",
-    image: "/projects/bdstall.jpg",
+    image: "/projects/bdstall.png",
     tech: ["HTML5", "CSS3", "Bootstrap 5"],
     desc: "A high-fidelity static clone of the popular Bd-Stall marketplace.",
     features: ["Fully Responsive Layout", "Detailed Product Pages", "Clean UI/UX Implementation"],

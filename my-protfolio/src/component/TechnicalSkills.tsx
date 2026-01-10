@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { type ReactElement } from 'react';
 import { 
   SiLaravel, SiReact, SiVuedotjs , SiJavascript, SiJquery, 
   SiPhp, SiMysql, SiBootstrap, SiGithub, SiWordpress, SiGraphql 
@@ -6,7 +6,7 @@ import {
 
 interface SkillCategory {
   category: string;
-  skills: { name: string; icon: JSX.Element; color: string }[];
+  skills: { name: string; icon: ReactElement; color: string }[];
 }
 
 const skillData: SkillCategory[] = [

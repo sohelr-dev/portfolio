@@ -43,9 +43,9 @@ const App: React.FC = () => {
           <p className="mb-2">Malibagh, Gulbagh, Dhaka</p>
           <p className="mb-3 text-info">Email: sohe.4273@gmail.com | WhatsApp: +8801580919769</p>
           <div className="d-flex justify-content-center gap-4">
-            <a href="https://github.com/sohelr-dev" target="_blank" className="text-white text-decoration-none">GitHub</a>
-            <a href="https://linkedin.com/in/sohel715" target="_blank" className="text-white text-decoration-none">LinkedIn</a>
-            <a href="https://sohelit.com" className="text-white text-decoration-none">Main Domain</a>
+            <a href="https://github.com/sohelr-dev" target="_blank" className="text-white text-decoration-none btn btn-primary">GitHub</a>
+            <a href="https://linkedin.com/in/sohel715" target="_blank" className="text-white text-decoration-none btn btn-warning">LinkedIn</a>
+            <a href="https://sohelit.com" className="text-white text-decoration-none btn btn-secondary">Main Domain</a>
           </div>
           <p className="mt-4 small text-secondary">© {new Date().getFullYear()} Sohel Rana. All Rights Reserved.</p>
         </div>
