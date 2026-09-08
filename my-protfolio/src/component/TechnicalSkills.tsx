@@ -3,6 +3,7 @@ import {
   SiLaravel, SiReact, SiVuedotjs , SiJavascript, SiJquery, 
   SiPhp, SiMysql, SiBootstrap, SiGithub, SiWordpress, SiGraphql 
 } from 'react-icons/si';
+import { FaLock } from 'react-icons/fa';
 
 interface SkillCategory {
   category: string;
@@ -32,7 +33,7 @@ const skillData: SkillCategory[] = [
     category: "Integrations & Tools",
     skills: [
       { name: "SSLCommerz / Stripe", icon: <span className="fw-bold">$$</span>, color: "#00d2ff" },
-      { name: "JWT / Sanctum", icon: <span className="fw-bold">🔐</span>, color: "#92fe9d" },
+      { name: "JWT / Sanctum", icon: <FaLock />, color: "#92fe9d" },
       { name: "WordPress Custom", icon: <SiWordpress />, color: "#21759B" },
       { name: "Git & C-Panel", icon: <SiGithub />, color: "#ffffff" },
     ]

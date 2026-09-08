@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# Sohel Rana — Full Stack Web Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with **React 19**, **TypeScript**, **Vite** and **Bootstrap 5**. It showcases my professional projects, technical skills, education, and contact information with smooth animations powered by Framer Motion and AOS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive, glassmorphism dark-theme UI
+- Animated hero section with floating tech icons (Framer Motion)
+- Scroll-reveal animations (AOS)
+- Technical skills grouped by category with brand icons
+- Project portfolio cards with live demo links
+- Education & awards timeline
+- SEO-optimized HTML with Open Graph tags
+- Fully clickable contact section (mailto / WhatsApp / socials)
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Layer       | Technology                                  |
+|-------------|---------------------------------------------|
+| Framework   | React 19 + TypeScript                       |
+| Build Tool  | Vite 7                                      |
+| Styling     | Bootstrap 5, custom CSS (glassmorphism)     |
+| Animation   | Framer Motion, AOS                          |
+| Icons       | react-icons                                 |
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js >= 18
+- npm
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# install dependencies
+npm install
+
+# start the dev server
+npm run dev
+
+# build for production
+npm run build
+
+# preview the production build
+npm run preview
+
+# run lint
+npm run lint
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+  component/        # Reusable UI components (Navbar, Hero, Skills, Projects, Timeline, Footer)
+  types/            # Shared TypeScript interfaces
+  App.tsx           # Root component
+  main.tsx          # App entry point
+  App.css           # Project-specific styles
+  index.css         # Global styles & theme variables
+```
+
+## Author
+
+**Sohel Rana** — Full Stack Web Developer
+
+- Email: sohe.4273@gmail.com
+- WhatsApp: +880 1580-919769
+- GitHub: [@sohelr-dev](https://github.com/sohelr-dev)
+- LinkedIn: [/in/sohel715](https://linkedin.com/in/sohel715)
+- Website: [sohelit.com](https://sohelit.com)
+
+## License
+
+This project is personal portfolio work. &copy; Sohel Rana. All Rights Reserved.

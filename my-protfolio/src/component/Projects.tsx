@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaCheck, FaExternalLinkAlt } from 'react-icons/fa';
 
 interface Project {
   title: string;
@@ -82,8 +82,14 @@ const Projects: React.FC = () => {
         {projects.map((p, i) => (
           <div className="col-lg-4 col-md-6" key={i} data-aos="zoom-in-up" data-aos-delay={i * 50}>
             <div className="card glass-card h-100 border-0 shadow-lg">
-              {/* Image Section */}
-              <div className="position-relative overflow-hidden" style={{ height: '220px' }}>
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View ${p.title} live project`}
+                className="position-relative overflow-hidden d-block"
+                style={{ height: '220px' }}
+              >
                 <img 
                     src={p.image} 
                     alt={p.title} 
@@ -96,7 +102,7 @@ const Projects: React.FC = () => {
                     <div className="project-overlay d-flex align-items-center justify-content-center">
                         <span className="text-white fw-bold">View Project</span>
                     </div>
-            </div>
+              </a>
 
               <div className="card-body p-4 d-flex flex-column">
                 <h4 className="card-title text-white fw-bold">{p.title}</h4>
@@ -106,7 +112,7 @@ const Projects: React.FC = () => {
                 <ul className="list-unstyled mb-4 flex-grow-1">
                    {p.features.map((feature, idx) => (
                      <li key={idx} className="text-light small mb-1">
-                       <span className="text-info me-2">▹</span>{feature}
+                       <FaCheck className="text-info me-2" aria-hidden="true" />{feature}
                      </li>
                    ))}
                 </ul>

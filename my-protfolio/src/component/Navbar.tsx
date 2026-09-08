@@ -13,6 +13,7 @@ const Navbar: React.FC = () => {
             <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>
             <li className="nav-item"><a className="nav-link" href="#skills">Skills</a></li>
             <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
+            <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
             <li className="nav-item ms-lg-3">
               <a className="btn btn-outline-info rounded-pill px-4 btn-sm fw-bold" href="#contact">
                 Hire Me

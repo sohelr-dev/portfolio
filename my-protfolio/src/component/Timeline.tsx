@@ -14,21 +14,21 @@ const timelineData: TimelineItem[] = [
     year: "2025",
     title: "Professional Diploma in Web Application Development",
     institution: "IsDB-BISEW IT Scholarship Programme",
-    description: "Intensive 788-hour training on Laravel, React, Vue.js, and WordPress. [cite: 31, 32, 40]",
+    description: "Intensive 788-hour training on Laravel, React, Vue.js, and WordPress.",
     icon: <FaAward />
   },
   {
     year: "2022",
     title: "BSc in Statistics",
     institution: "Habibullah Bahar College, Dhaka",
-    description: "Achieved CGPA 3.16. Developed strong analytical reasoning and logical precision. [cite: 10, 42]",
+    description: "Achieved CGPA 3.16. Developed strong analytical reasoning and logical precision.",
     icon: <FaGraduationCap />
   },
   {
     year: "2018",
     title: "Higher Secondary Certificate (Science)",
     institution: "Science Background",
-    description: "Completed with a focus on analytical thinking and problem-solving. [cite: 43]",
+    description: "Completed with a focus on analytical thinking and problem-solving.",
     icon: <FaGraduationCap />
   }
 ];
@@ -36,13 +36,13 @@ const timelineData: TimelineItem[] = [
 const Timeline: React.FC = () => {
   return (
     <section className="container py-5">
-      <h2 className="text-center mb-5 fw-bold gradient-text" data-aos="fade-up">Education & Awards</h2>
+      <h2 className="text-center mb-5 fw-bold gradient-text" data-aos="fade-up">Education & Training</h2>
       <div className="row justify-content-center">
         <div className="col-lg-8">
           {timelineData.map((item, index) => (
             <div className="d-flex mb-4" key={index} data-aos="fade-left" data-aos-delay={index * 100}>
               <div className="me-4">
-                <div className="glass-card rounded-circle d-flex align-items-center justify-content-center" 
+                <div className="glass-card rounded-circle d-flex align-items-center justify-content-center"
                      style={{ width: '60px', height: '60px', color: '#00d2ff', fontSize: '1.5rem' }}>
                   {item.icon}
                 </div>
