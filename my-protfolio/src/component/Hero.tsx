@@ -20,8 +20,8 @@ const Hero: React.FC = () => {
             </h3>
 
             <p className="lead text-secondary mb-4" style={{ maxWidth: '90%' }}>
-              Utilizing a <strong>BSc in Statistics</strong> to apply analytical reasoning
-              and logical precision in solving complex technical challenges within web development.
+              Full Stack Web Developer specializing in <strong>Laravel, React, and Vue.js</strong>.
+              I build secure, scalable web applications, REST/GraphQL APIs, and reliable business solutions.
             </p>
 
             <div className="mt-4 d-flex flex-wrap gap-2">
@@ -34,6 +34,7 @@ const Hero: React.FC = () => {
             <div className="mt-4 d-flex flex-wrap gap-3">
               <a href="#projects" className="btn btn-primary px-4">View Projects</a>
               <a href="#contact" className="btn btn-outline-info px-4">Hire Me</a>
+              <a href="/documents/sohel-rana-resume.pdf" download className="btn btn-outline-light px-4">Download Resume</a>
             </div>
           </motion.div>
         </div>

@@ -7,6 +7,7 @@ import './App.css';
 import Navbar from './component/Navbar';
 import Hero from './component/Hero';
 import TechnicalSkills from './component/TechnicalSkills';
+import Experience from './component/Experience';
 import Projects from './component/Projects';
 import Timeline from './component/Timeline';
 import Footer from './component/Footer';
@@ -33,6 +34,8 @@ const App: React.FC = () => {
         </div>
 
         <TechnicalSkills />
+
+        <Experience />
 
         <Projects />
 

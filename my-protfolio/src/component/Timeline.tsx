@@ -6,15 +6,17 @@ interface TimelineItem {
   title: string;
   institution: string;
   description: string;
+  certificateUrl?: string;
   icon: ReactElement;
 }
 
 const timelineData: TimelineItem[] = [
   {
     year: "2025",
-    title: "Professional Diploma in Web Application Development",
+    title: "Professional Diploma & IsDB-BISEW Scholarship",
     institution: "IsDB-BISEW IT Scholarship Programme",
-    description: "Intensive 788-hour training on Laravel, React, Vue.js, and WordPress.",
+    description: "Awarded the IsDB-BISEW IT Scholarship. Completed 788 hours of training in Laravel, React, Vue.js, and WordPress.",
+    certificateUrl: "https://drive.google.com/file/d/1tPRohrowDiWVBI_BV-AoYTKo1evUXY6D/view?usp=sharing",
     icon: <FaAward />
   },
   {
@@ -55,6 +57,16 @@ const Timeline: React.FC = () => {
                 <h4 className="fw-bold">{item.title}</h4>
                 <h6 className="text-info">{item.institution}</h6>
                 <p className="text-secondary small mb-0">{item.description}</p>
+                {item.certificateUrl && (
+                  <a
+                    href={item.certificateUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-outline-info btn-sm mt-3"
+                  >
+                    View Certificate
+                  </a>
+                )}
               </div>
             </div>
           ))}
